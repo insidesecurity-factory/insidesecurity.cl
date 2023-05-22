@@ -1,0 +1,7 @@
+@media (min-width: 768px) {
+    .factory-view .app-bg-header {
+        background-image: url('./header-background.png');
+        background-position: center right;
+        opacity: 0.2;
+    }
+}

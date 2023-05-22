@@ -1,0 +1,93 @@
+/*
+Insidesecurity (C) 2023
+Corporative template v2023.05.08
+https://insidesecurity.cl/ info@insidesecurity.cl
+*/
+
+:root {
+    --app-color-1: #3e91d5;
+    --app-color-2: #3877ab;
+    --app-color-3: #19507e;
+}
+
+body {
+    font-family: 'Source Sans Pro';
+    color: #44546a;
+}
+
+.app-bg-primary {
+    background-color: var(--app-color-1);
+    background: linear-gradient(144deg, var(--app-color-1) 0%, var(--app-color-2) 100%);
+}
+
+.app-bg-graphic {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.app-text-color-1 {
+    color: var(--app-color-1) !important;
+}
+
+.app-text-color-2 {
+    color: var(--app-color-2) !important;
+}
+
+.app-text-color-3 {
+    color: var(--app-color-3) !important;
+}
+
+.app-text-muted {
+    opacity: 0.5;
+}
+
+.app-bg-color-1 {
+    background-color: var(--app-color-1) !important;
+}
+
+.app-bg-color-2 {
+    background-color: var(--app-color-2) !important;
+}
+
+.app-bg-color-3 {
+    background-color: var(--app-color-3) !important;
+}
+
+.btn-primary{
+    background-color: var(--app-color-1);
+    border: 0 none;
+}
+
+.btn-primary:hover{
+    background-color: var(--app-color-2);
+}
+
+.btn-primary:active{
+    background-color: var(--app-color-3) !important;
+}
+
+.app-material-icons {
+    font-family: "Material Icons Round";
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "liga";
+}
+
+.selectable-blocks img:hover {
+    background-color: var(--bs-light);
+}
+
+.app-bg-angle-color {
+    background: linear-gradient(145deg, #f5f9ff 50%, #ffffff 50%);
+}
