@@ -3,31 +3,39 @@ import './assets/style.css';
 import appSecurityImg from './assets/app-security.jpg';
 import factoryImg from './assets/factory.jpg';
 import infrastructureImg from './assets/infrastructure.jpg';
-import successCmpcImg from './assets/success/cmpc.png';
-import successEntelImg from './assets/success/entel-chile.png';
-import successBancoDeChileImg from './assets/success/banco-de-chile.png';
-import successBancoPichinchaImg from './assets/success/banco-pichincha.png';
-import successGrupoSecurityImg from './assets/success/grupo-security.png';
-import successDpWorldImg from './assets/success/dp-world.png';
-import successBbvaImg from './assets/success/banco-bbva.png';
-import successGrupoCopesaImg from './assets/success/grupo-copesa.png';
-import successCardifImg from './assets/success/cardif.png';
-import successConsorcioImg from './assets/success/consorcio.png';
-import partnerAppdomeImg from './assets/partners/appdome.png';
-import partnerAquaSecurityImg from './assets/partners/aqua-security.png';
-import partnerAwsImg from './assets/partners/aws.png';
-import partnerAzureImg from './assets/partners/azure.png';
-import partnerCheckmarxImg from './assets/partners/checkmarx.png';
-import partnerEcCouncilImg from './assets/partners/ec-council.png';
-import partnerExtrahopImg from './assets/partners/extrahop.png';
-import partnerGoogleSuiteImg from './assets/partners/google-suite.png';
-import partnerGuardicoreImg from './assets/partners/guardicore.png';
-import partnerKiuwanImg from './assets/partners/kiuwan.png';
-import partnerKnowbe4Img from './assets/partners/knowbe4.png';
-import partnerOffice365Img from './assets/partners/office-365.png';
-import partnerPaloAltoImg from './assets/partners/palo-alto.png';
-import partnerRapid1Img from './assets/partners/rapid1.png';
-import partnerStellarImg from './assets/partners/stellar.png';
+import successCmpcImg from './assets/success/cmpc.jpg';
+import successEntelImg from './assets/success/entel-chile.jpg';
+import successFalabellaImg from './assets/success/falabella.jpg';
+import successBancoDeChileImg from './assets/success/banco-de-chile.jpg';
+import successBancoRipleyImg from './assets/success/banco-ripley.jpg';
+import successBancoPichinchaImg from './assets/success/banco-pichincha.jpg';
+import successGrupoSecurityImg from './assets/success/grupo-security.jpg';
+import successDpWorldImg from './assets/success/dp-world.jpg';
+import successEfeImg from './assets/success/efe.jpg';
+import successBbvaImg from './assets/success/banco-bbva.jpg';
+import successCajaLosAndesImg from './assets/success/caja-los-andes.jpg';
+import successGrupoCopesaImg from './assets/success/grupo-copesa.jpg';
+import successCardifImg from './assets/success/cardif.jpg';
+import successConsorcioImg from './assets/success/consorcio.jpg';
+import successHdiImg from './assets/success/hdi.jpg';
+import successInacapImg from './assets/success/inacap.jpg';
+import successSondaImg from './assets/success/sonda.jpg';
+import successGtdIntesisImg from './assets/success/gtd-intesis.jpg';
+import partnerAppdomeImg from './assets/partners/appdome.jpg';
+import partnerAquaSecurityImg from './assets/partners/aqua-security.jpg';
+import partnerAwsImg from './assets/partners/aws.jpg';
+import partnerAzureImg from './assets/partners/azure.jpg';
+import partnerCheckmarxImg from './assets/partners/checkmarx.jpg';
+import partnerEcCouncilImg from './assets/partners/ec-council.jpg';
+import partnerExtrahopImg from './assets/partners/extrahop.jpg';
+import partnerGoogleSuiteImg from './assets/partners/google-suite.jpg';
+import partnerGuardicoreImg from './assets/partners/guardicore.jpg';
+import partnerKiuwanImg from './assets/partners/kiuwan.jpg';
+import partnerKnowbe4Img from './assets/partners/knowbe4.jpg';
+import partnerOffice365Img from './assets/partners/office-365.jpg';
+import partnerPaloAltoImg from './assets/partners/palo-alto.jpg';
+import partnerRapid7Img from './assets/partners/rapid7.jpg';
+import partnerStellarImg from './assets/partners/stellar.jpg';
 
 
 class HomeMainView extends Component {
@@ -191,38 +199,62 @@ class HomeMainView extends Component {
                                     Desde el a&ntilde;o 2007 acompa&ntilde;amos a las empresas
                                     en la creaci&oacute;n y desarrollo de su cultura y
                                     procesos de seguridad. Contamos con una &aacute;mplia
-                                    experiencia y casos de &eacute;xito demostrables.
+                                    experiencia y casos de &eacute;xito demostrables en <b>m&aacute;s de 50 empresas</b>.
                                 </p>
                                 <div className="row justify-content-md-center selectable-blocks">
-                                    <div className="col-6 col-md-3">
-                                        <img className="p-3 m-1 img-fluid border rounded" src={successCmpcImg} alt="CMPC" />
-                                    </div>
-                                    <div className="col-6 col-md-3">
+                                    <div className="col-6 col-md-2">
                                         <img className="p-3 m-1 img-fluid border rounded" src={successEntelImg} alt="Entel Chile" />
                                     </div>
-                                    <div className="col-6 col-md-3">
+                                    <div className="col-6 col-md-2">
                                         <img className="p-3 m-1 img-fluid border rounded" src={successBancoDeChileImg} alt="Banco de Chile" />
                                     </div>
-                                    <div className="col-6 col-md-3">
-                                        <img className="p-3 m-1 img-fluid border rounded" src={successBancoPichinchaImg} alt="Banco Pichincha" />
-                                    </div>
-                                    <div className="col-6 col-md-3">
-                                        <img className="p-3 m-1 img-fluid border rounded" src={successGrupoSecurityImg} alt="Grupo security" />
-                                    </div>
-                                    <div className="col-6 col-md-3">
-                                        <img className="p-3 m-1 img-fluid border rounded" src={successDpWorldImg} alt="DP World" />
-                                    </div>
-                                    <div className="col-6 col-md-3">
+                                    <div className="col-6 col-md-2">
                                         <img className="p-3 m-1 img-fluid border rounded" src={successBbvaImg} alt="Banco BBVA" />
                                     </div>
-                                    <div className="col-6 col-md-3">
+                                    <div className="col-6 col-md-2">
+                                        <img className="p-3 m-1 img-fluid border rounded" src={successBancoRipleyImg} alt="Banco Ripley" />
+                                    </div>
+                                    <div className="col-6 col-md-2">
+                                        <img className="p-3 m-1 img-fluid border rounded" src={successGrupoSecurityImg} alt="Grupo security" />
+                                    </div>
+                                    <div className="col-6 col-md-2">
+                                        <img className="p-3 m-1 img-fluid border rounded" src={successBancoPichinchaImg} alt="Banco Pichincha" />
+                                    </div>
+                                    <div className="col-6 col-md-2">
+                                        <img className="p-3 m-1 img-fluid border rounded" src={successFalabellaImg} alt="Falabella" />
+                                    </div>
+                                    <div className="col-6 col-md-2">
+                                        <img className="p-3 m-1 img-fluid border rounded" src={successCajaLosAndesImg} alt="Caja los Andes" />
+                                    </div>
+                                    <div className="col-6 col-md-2">
+                                        <img className="p-3 m-1 img-fluid border rounded" src={successHdiImg} alt="HDI Seguros" />
+                                    </div>
+                                    <div className="col-6 col-md-2">
+                                        <img className="p-3 m-1 img-fluid border rounded" src={successDpWorldImg} alt="DP World" />
+                                    </div>
+                                    <div className="col-6 col-md-2">
+                                        <img className="p-3 m-1 img-fluid border rounded" src={successEfeImg} alt="Grupo EFE" />
+                                    </div>
+                                    <div className="col-6 col-md-2">
                                         <img className="p-3 m-1 img-fluid border rounded" src={successGrupoCopesaImg} alt="Grupo Copesa" />
                                     </div>
-                                    <div className="col-6 col-md-3">
+                                    <div className="col-6 col-md-2">
                                         <img className="p-3 m-1 img-fluid border rounded" src={successCardifImg} alt="Cardif" />
                                     </div>
-                                    <div className="col-6 col-md-3">
-                                        <img className="p-3 m-1 img-fluid border rounded" src={successConsorcioImg} alt="Cardif" />
+                                    <div className="col-6 col-md-2">
+                                        <img className="p-3 m-1 img-fluid border rounded" src={successCmpcImg} alt="CMPC" />
+                                    </div>
+                                    <div className="col-6 col-md-2">
+                                        <img className="p-3 m-1 img-fluid border rounded" src={successConsorcioImg} alt="Consorcio" />
+                                    </div>
+                                    <div className="col-6 col-md-2">
+                                        <img className="p-3 m-1 img-fluid border rounded" src={successSondaImg} alt="Sonda" />
+                                    </div>
+                                    <div className="col-6 col-md-2">
+                                        <img className="p-3 m-1 img-fluid border rounded" src={successGtdIntesisImg} alt="GTD Intesis" />
+                                    </div>
+                                    <div className="col-6 col-md-2">
+                                        <img className="p-3 m-1 img-fluid border rounded" src={successInacapImg} alt="Inacap" />
                                     </div>
                                 </div>
                             </div>
@@ -282,7 +314,7 @@ class HomeMainView extends Component {
                                         <img className="p-3 m-1 img-fluid border rounded" src={partnerPaloAltoImg} alt="Palo Alto" />
                                     </div>
                                     <div className="col-6 col-md-2">
-                                        <img className="p-3 m-1 img-fluid border rounded" src={partnerRapid1Img} alt="Rapid 1" />
+                                        <img className="p-3 m-1 img-fluid border rounded" src={partnerRapid7Img} alt="Rapid 7" />
                                     </div>
                                     <div className="col-6 col-md-2">
                                         <img className="p-3 m-1 img-fluid border rounded" src={partnerStellarImg} alt="Stellar" />

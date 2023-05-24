@@ -85,7 +85,7 @@ body {
 }
 
 .selectable-blocks img:hover {
-    background-color: var(--bs-light);
+    border-color: #bbb !important;
 }
 
 .app-bg-angle-color {
