@@ -262,6 +262,7 @@ class HomeMainView extends Component {
                     </div>
                 </div>
 
+                {/*
                 <div className="py-4 py-md-5">
                     <div className="container">
                         <div className="row justify-content-md-center">
@@ -324,6 +325,7 @@ class HomeMainView extends Component {
                         </div>
                     </div>
                 </div>
+                */}
             </div>
         );
     }
