@@ -15,6 +15,16 @@ body:
         - **Verifique la integridad de su conexión**: El uso de una red VPN o red insegura puede provocar cambios inesperados en el contenido del sitio WEB, ya sea debido a problemas de servicios de caché intermedios, certificados SSL mal configurados o ataques de tipo [MITM](https://cwe.mitre.org/data/definitions/300.html).
 
         Complete los siguientes campos:
+  - type: checkboxes
+    id: pre-validation
+    attributes:
+      label: Validaciones antes de publicar
+      description: Realice las siguientes validaciones antes de continuar.
+      options:
+        - label: Mi conexión es segura al momento de reproducir el problema.
+        - label: Mi navegador WEB está actualizado.
+        - label: He intentado vaciar el caché de mi navegador WEB antes de reproducir el problema.
+          required: true
   - type: textarea
     id: what-happened
     attributes:
@@ -44,6 +54,5 @@ body:
       value: |
         - Nombre y versión del navegador WEB:
         - Nombre y versión (o distribución) del Sistema Operativo:
-        - ¿Estoy utilizando VPN o una red insegura?:
     validations:
       required: true
