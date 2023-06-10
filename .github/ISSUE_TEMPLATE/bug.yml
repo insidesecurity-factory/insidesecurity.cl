@@ -9,7 +9,8 @@ body:
         Antes de realizar un reporte recuerde lo siguiente:
         - **Un buen título** debe contener el problema y la localización, por ejemplo: `Color incorrecto en la portada principal`.
         - Debe ser lo más **descriptivo posible**, si el problema no se puede reproducir será marcado como inválido.
-        
+        - **Verifique la integridad de su conexión**: El uso de una red VPN o red insegura **puede provocar cambios inesperados en el contenido del sitio WEB**, ya sea debido a problemas de servicios de caché intermedios, certificados SSL mal configurados o ataques de tipo [MITM](https://cwe.mitre.org/data/definitions/300.html).
+
         Complete los siguientes campos:
   - type: textarea
     id: what-happened
