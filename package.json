@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "version": "2023.6.1-stable",
+  "version": "2023.6.10-stable",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

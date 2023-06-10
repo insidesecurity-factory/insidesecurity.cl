@@ -166,7 +166,7 @@ class SecurityMainView extends Component {
                                     A trav&eacute;s de un an&aacute;lisis GAP apoyamos a los clientes a
                                     detectar los riesgos y exposici&oacute;n que representa la
                                     compa&ntilde;&iacute;a en la actualidad. Tambi&eacute;n, generar un
-                                    plan de accion con prioridades y tiempos.
+                                    plan de acci&oacute;n con prioridades y tiempos.
                                 </p>
                             </div>
                         </div>
