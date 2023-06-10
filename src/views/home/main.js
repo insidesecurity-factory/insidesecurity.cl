@@ -198,7 +198,7 @@ class HomeMainView extends Component {
                                 <p className="lead text-center">
                                     Desde el a&ntilde;o 2007 acompa&ntilde;amos a las empresas
                                     en la creaci&oacute;n y desarrollo de su cultura y
-                                    procesos de seguridad. Contamos con una &aacute;mplia
+                                    procesos de seguridad. Contamos con una amplia
                                     experiencia y casos de &eacute;xito demostrables en <b>m&aacute;s de 50 empresas</b>.
                                 </p>
                                 <div className="row justify-content-md-center selectable-blocks">

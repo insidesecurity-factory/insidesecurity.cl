@@ -2,6 +2,15 @@
 
 Sitio WEB público de [Inside Security](https://insidesecurity.cl/).
 
+Tecnologías utilizadas:
+
+- [NodeJS](https://nodejs.org/).
+- [ReactJS](https://react.dev/).
+- Diseño de maquetación inspirado en [Google Material Design](https://design.google/).
+- [Bootstrap 5](https://getbootstrap.com/docs/5.2).
+- [Google Open Fonts](https://fonts.google.com/).
+- [Google Materials Symbols](https://fonts.google.com/icons)
+
 
 ## Comandos
 
@@ -11,14 +20,8 @@ Ejecución en ambiente de desarrollo:
 npm start
 ```
 
-Compilación para ambiente productivo:
+Compilacióndel proyecto:
 
 ```bash
 npm run build
-```
-
-Para subir ambiente productivo a servidor:
-
-```bash
-rsync -tvrz --progress --delete ./build/ user@server:/home/insidesecurity.cl/public_html/
 ```

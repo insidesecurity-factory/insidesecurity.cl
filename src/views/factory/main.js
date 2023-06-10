@@ -100,7 +100,7 @@ class FactoryMainView extends Component {
                                 <img src={sprintSecurityImg} className="img-fluid" alt="Desarrollo de software" />
                             </div>
                             <div className="col-md-5">
-                                <h2 className="display-5 mb-3 text-center text-md-start">Lo hacemos por t&iacute;</h2>
+                                <h2 className="display-5 mb-3 text-center text-md-start">Lo hacemos por ti</h2>
                                 <p className="mb-4 mb-md-5 text-center text-md-start">
                                     Ofrecemos un abanico de soluciones <b>orientadas a la seguridad</b> en la
                                     f&aacute;brica de soluciones aplicativas. Delega la ejecuci&oacute;n en nuestras

@@ -47,8 +47,8 @@ class FactoryServicesView extends Component {
                                 </p>
                                 <p className="text-center text-md-start">
                                     Nos basamos en los est&aacute;ndares y procedimientos internacionales recomendados
-                                    a traves del uso de buenas pr&aacute;cticas para que tus soluciones sean completamente
-                                    escalables y seguras, ahorrando costos al largo plazo.
+                                    a trav&eacute;s del uso de buenas pr&aacute;cticas para que tus soluciones sean
+                                    completamente escalables y seguras, ahorrando costos al largo plazo.
                                 </p>
                                 <div className="text-center text-md-start">
                                     <button

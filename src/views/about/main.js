@@ -47,10 +47,10 @@ class AboutMainView extends Component {
                                     alt="David Reyes Letelier" />
                                 <p className="lead fst-italic text-center text-lg-start">
                                     Inside Security es una empresa legalmente constituida en Chile
-                                    con sedes en Valparaiso, Santiago de Chile y Per&uacute;, que
+                                    con sedes en Valpara&iacute;so, Santiago de Chile y Per&uacute;, que
                                     nace con la misi&oacute;n de ofrecer servicios y soluciones de calidad
                                     que prometan disminuir los riesgos asociados con la delincuencia
-                                    inform&aacute;tica a traves del trabajo &eacute;tico y profesional.<br />
+                                    inform&aacute;tica a trav&ecute;s del trabajo &eacute;tico y profesional.<br />
                                     <span className="d-block fw-bolder pt-3">David Reyes Letelier. Gerente General de Inside Security.</span>
                                 </p>
                             </div>
@@ -64,7 +64,7 @@ class AboutMainView extends Component {
                                     <p>
                                         A trav&eacute;s del talento de nuestros colaboradores, constantes capacitaciones
                                         y experiencia tanto personal como corporativa, los servicios y productos
-                                        de Inside Security tiene la calidad y excelencia requerida con los m&aacute;s
+                                        de Inside Security tienen la calidad y excelencia requerida con los m&aacute;s
                                         altos est&aacute;ndares.
                                     </p>
                                 </div>
@@ -119,7 +119,7 @@ class AboutMainView extends Component {
                                         Sabemos que un gran proyecto requiere del trabajo en equipo,
                                         por lo cual nos adaptamos y creamos el ambiente necesario
                                         para que nuestros clientes puedan <b>escalar sus soluciones
-                                        demanera segura y proyectarse a largo plazo</b>.
+                                        de manera segura y proyectarse a largo plazo</b>.
                                     </p>
                                 </div>
                                 <div className="col-md-6 px-4 d-none d-md-flex align-items-center">

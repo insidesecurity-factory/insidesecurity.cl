@@ -52,7 +52,7 @@ class SecurityMainView extends Component {
                                 </h2>
                                 <p className="text-center text-md-start">
                                     Contamos con el conocimiento y la experiencia necesaria para
-                                    realizar el acompa&ntilde;amiento dentro de las fabricas de
+                                    realizar el acompa&ntilde;amiento dentro de las f&aacute;bricas de
                                     desarrollo &Aacute;gil y tradicionales, velando por la Seguridad,
                                     escalabilidad y buenas pr&aacute;cticas que conllevan a la
                                     disminuci&oacute;n de riesgos al corto y largo plazo,
@@ -163,10 +163,10 @@ class SecurityMainView extends Component {
                                     organizaci&oacute;n en sus 5 pilares.
                                 </p>
                                 <p>
-                                    Atravez de un analisis GAP apoyamos a los clientes a detectar
-                                    los riesgos y exposicion que representa la compa&ntilde;&iacute;a
-                                    en la actualidad. Tambien, generar un plan de accion con
-                                    prioridaddes y tiempos.
+                                    A trav&eacute;s de un an&aacute;lisis GAP apoyamos a los clientes a
+                                    detectar los riesgos y exposici&oacute;n que representa la
+                                    compa&ntilde;&iacute;a en la actualidad. Tambi&eacute;n, generar un
+                                    plan de accion con prioridades y tiempos.
                                 </p>
                             </div>
                         </div>

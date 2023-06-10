@@ -82,9 +82,9 @@ class Layout extends Component {
                                     <p>
                                         <b>&iquest;Necesitas ayuda con tu proyecto de TI? </b>
                                         &iexcl;No dudes en ponerte en contacto con nosotros!
-                                        Nuestro equipo de expertos estan listos para ayudarte a resolver
-                                        cualquier problema o inquietud que puedas tener.
-                                        Ya sea que necesites asistencia t&eacute;cnica, asesoramiento
+                                        Nuestro equipo de expertos est&aacute;n listos para ayudarte a
+                                        resolver cualquier problema o inquietud que puedas tener. Ya
+                                        sea que necesites asistencia t&eacute;cnica, asesoramiento
                                         o simplemente una consulta, estamos aqu&iacute; para ayudarte
                                         a llevar tu empresa al siguiente nivel en cuanto a tecnolog&iacute;a
                                         se refiere.

@@ -48,7 +48,7 @@ class FactoryTechnologiesView extends Component {
                             <p className="mb-5">
                                 Contamos con &aacute;mplios conocimientos en tecnolog&iacute;a tradicional, anal&iacute;tica
                                 y transaccional. <b>Priorizamos el uso de Frameworks y tecnolog&iacute;as robustas y
-                                seguras con &aacute;mplio soporte</b> como Java Spring Boot Framework, .NET MVC5
+                                seguras con amplio soporte</b> como Java Spring Boot Framework, .NET MVC5
                                 Framework sobre C#, NodeJS, ReactJS Framework, Bootstrap 5 Framework y Google
                                 Materials, arquitectura en microservicios, API/REST, Bus de datos reactivos y
                                 Dockerizaci&oacute;n y despliegue CICD sobre servicios en nube como AWS, Azure,
