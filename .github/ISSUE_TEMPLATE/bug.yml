@@ -1,0 +1,42 @@
+name: Reporte de errores
+description: Informar de un error
+title: "[bug]: Título del error y donde se encuentra"
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de realizar un reporte recuerde lo siguiente:
+        - **Un buen título** debe contener el problema y la localización, por ejemplo: `Color incorrecto en la portada principal`.
+        - Debe ser lo más **descriptivo posible**, si el problema no se puede reproducir será marcado como inválido.
+        
+        Complete los siguientes campos:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: ¿Cual es el problema?
+      description: Indique con detalle cual es el problema, si es necesario indique como se puede reprducir. Si no podemos reproducir el problema será marcado como inválido.
+      placeholder: Detalle del problema
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: Propuesta de solución
+      description: ¿Qué propone para remediar este problema? (opcional).
+    validations:
+      required: false
+  - type: textarea
+    id: localization
+    attributes:
+      label: Localización del problema
+      description: Indique en que lugares se presenta el problema
+    validations:
+      required: true
+  - type: textarea
+    id: enviroment
+    attributes:
+      label: Entorno
+      description: Indique qué tecnología está utilizando para observar el problema, por ejemplo, el nombre y versión del navegador WEB, Sistema Operativo y similares.
+    validations:
+      required: true

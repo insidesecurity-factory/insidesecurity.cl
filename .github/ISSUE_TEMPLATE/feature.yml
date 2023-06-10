@@ -1,0 +1,19 @@
+name: Propuesta de característica (feature)
+description: Proposición de cambios y nuevas características.
+title: "[feature]: Título de la propuesta"
+labels: ["feature", "triage"]
+body:
+  - type: textarea
+    id: details
+    attributes:
+      label: ¿Cual es la propuesta?
+      description: Describa su propuesta lo más detallada posible.
+    validations:
+      required: true
+  - type: textarea
+    id: what-solves
+    attributes:
+      label: ¿Qué soluciona o cual es el beneficio?
+      description: Argumente y defienda su idea.
+    validations:
+      required: true
