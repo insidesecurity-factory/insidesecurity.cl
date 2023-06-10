@@ -132,7 +132,7 @@ class Layout extends Component {
                                 <b>Inside Security</b> es una empresa legalmente constituida en Chile, con la
                                 misi&oacute;n de ofrecer servicios y soluciones de calidad que prometan
                                 <b> disminuir los riesgos asociados con la delincuencia
-                                inform&aacute;tica</b> a traves del trabajo &eacute;tico y profesional.
+                                inform&aacute;tica</b> a trav&eacute;s del trabajo &eacute;tico y profesional.
                             </p>
                             <div className="row">
                                 <div className="col-md-6">
