@@ -1,5 +1,5 @@
-name: Reporte de errores
-description: Informar de un error
+name: Reportar un error
+description: Informar de un error.
 title: "[bug]: Título del error y donde se encuentra"
 labels: ["bug", "triage"]
 body:
@@ -16,7 +16,6 @@ body:
     attributes:
       label: ¿Cual es el problema?
       description: Indique con detalle cual es el problema, si es necesario indique como se puede reprducir. Si no podemos reproducir el problema será marcado como inválido.
-      placeholder: Detalle del problema
     validations:
       required: true
   - type: textarea
