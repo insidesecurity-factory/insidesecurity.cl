@@ -38,8 +38,8 @@ body:
       label: Entorno
       description: Indique qué tecnología está utilizando para observar el problema, por ejemplo, el nombre y versión del navegador WEB, Sistema Operativo y similares.
       value: |
-        - Navegador WEB:
-        - Sistema Operativo:
+        - Nombre y versión del navegador WEB:
+        - Nombre y versión (o distribución) del Sistema Operativo:
         - ¿Estoy utilizando VPN o una red insegura?:
     validations:
       required: true
