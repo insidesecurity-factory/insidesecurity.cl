@@ -3,8 +3,8 @@ import './assets/style.css';
 import securityImg from './assets/security.png';
 import davidReyesImg from './assets/david-reyes.png';
 import staffImg from './assets/staff.jpg';
-import splashUpImg from './assets/splash-up.png';
-import splashDownImg from './assets/splash-down.png';
+// import splashUpImg from './assets/splash-up.png';
+// import splashDownImg from './assets/splash-down.png';
 
 
 class AboutMainView extends Component {
@@ -132,10 +132,10 @@ class AboutMainView extends Component {
                 </div>
 
                 <div className="text-light app-bg-color-1 my-4 py-5 position-relative">
-                    <img className="splash-up d-none d-md-block position-absolute" src={splashUpImg} alt="splash" />
+                    <div className="splash-up d-none d-lg-block w-100 position-absolute"></div>
                     <div className="container position-relative">
                         <div className="row justify-content-md-center">
-                            <div className="col-md-5 px-0 px-md-4 pt-3 pt-md-0 ps-0 mb-3 mb-md-0">
+                            <div className="col-lg-5 px-0 px-md-4 pt-3 pt-md-0 ps-0 mb-3 mb-md-0">
                                 <img src={staffImg} className="img-fluid rounded border p-1" alt="Staff Insidesecurity" />
                             </div>
                             <div className="col-md-5">
@@ -156,7 +156,7 @@ class AboutMainView extends Component {
                             </div>
                         </div>
                     </div>
-                    <img className="splash-down d-none d-md-block position-absolute" src={splashDownImg} alt="splash" />
+                    <div className="splash-down d-none d-lg-block w-100 position-absolute"></div>
                 </div>
             </div>
         );

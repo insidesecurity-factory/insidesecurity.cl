@@ -12,11 +12,20 @@
     top: -400px;
     z-index: -1;
     opacity: 0.6;
+    background-image: url('./splash.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    height: 500px;
 }
 
 .about-view .splash-down {
     left: 0;
-    bottom: -460px;
+    bottom: -400px;
     z-index: -1;
     opacity: 0.6;
+    background-image: url('./splash.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    height: 500px;
+    transform: scaleX(-1) scaleY(-1);
 }
