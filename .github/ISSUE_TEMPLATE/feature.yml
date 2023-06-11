@@ -1,6 +1,6 @@
-name: Propuesta de característica (feature)
-description: Proposición de cambios y nuevas características.
-title: "(Feature) Título de la propuesta"
+name: Propuesta de nuevas ideas
+description: Proposición de ideas, cambios, mejoras y nuevas características.
+title: "Idea: Título de su idea a proponer"
 labels: ["feature", "triage"]
 assignees:
   - yhojann-cl
@@ -8,8 +8,8 @@ body:
   - type: textarea
     id: details
     attributes:
-      label: ¿Cual es la propuesta?
-      description: Describa su propuesta lo más detallada posible.
+      label: ¿Cual es la idea que se propone?
+      description: Describa su idea lo más detallada posible.
     validations:
       required: true
   - type: textarea
