@@ -1,6 +1,8 @@
 name: Reportar un error
 description: Informar de un error.
 labels: ["bug", "triage"]
+assignees:
+  - yhojann-cl
 body:
   - type: markdown
     attributes:
