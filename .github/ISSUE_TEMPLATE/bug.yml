@@ -44,13 +44,17 @@ body:
       description: Indique en que lugares se presenta el problema, etso nos permitirá saber donde realizar las correcciones.
     validations:
       required: true
-  - type: textarea
-    id: enviroment
+  - type: input
+    id: browser-version
     attributes:
-      label: Entorno
-      description: Indique qué tecnología está utilizando para observar el problema, por ejemplo, el nombre y versión del navegador WEB, Sistema Operativo y similares.
-      value: |
-        - Nombre y versión del navegador WEB:
-        - Nombre y versión (o distribución) del Sistema Operativo:
+      label: Nombre y versión de su navegador WEB
+      description: Detalles del navegador WEB utilizado para visualizar el problema.
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: Nombre, distribución (si aplica) y versión de su Sistema Operativo
+      description: Detalles del Sistema Operativo utilizado para visualizar el problema.
     validations:
       required: true
