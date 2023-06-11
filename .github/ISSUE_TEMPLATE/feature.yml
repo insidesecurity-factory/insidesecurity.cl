@@ -8,7 +8,7 @@ body:
   - type: textarea
     id: details
     attributes:
-      label: ¿Cual es la idea que se propone?
+      label: ¿Cual es la idea que propone?
       description: Describa su idea lo más detallada posible.
     validations:
       required: true
