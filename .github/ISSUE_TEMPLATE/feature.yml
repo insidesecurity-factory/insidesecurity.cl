@@ -2,6 +2,8 @@ name: Propuesta de característica (feature)
 description: Proposición de cambios y nuevas características.
 title: "[feature]: Título de la propuesta"
 labels: ["feature", "triage"]
+assignees:
+  - yhojann-cl
 body:
   - type: textarea
     id: details
