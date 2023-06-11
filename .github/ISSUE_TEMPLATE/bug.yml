@@ -1,6 +1,6 @@
 name: Reportar un error
 description: Informar de un error.
-title: ""
+title: "Título del error y donde se encuentra"
 labels: ["bug", "triage"]
 body:
   - type: markdown
