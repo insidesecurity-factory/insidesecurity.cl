@@ -21,7 +21,7 @@ Ejecución en ambiente de desarrollo:
 npm start
 ```
 
-Compilacióndel proyecto:
+Compilación del proyecto:
 
 ```bash
 npm run build
