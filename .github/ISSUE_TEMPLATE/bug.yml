@@ -41,7 +41,7 @@ body:
     id: localization
     attributes:
       label: Localización del problema
-      description: Indique en que lugares se presenta el problema, etso nos permitirá saber donde realizar las correcciones.
+      description: Indique en que lugares se presenta el problema, esto nos permitirá saber donde realizar las correcciones.
     validations:
       required: true
   - type: input
