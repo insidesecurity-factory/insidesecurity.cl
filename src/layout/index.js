@@ -53,7 +53,7 @@ class Layout extends Component {
                                         <button
                                             className={`btn btn-link nav-link d-flex align-items-center mx-2 ${document.location.pathname.startsWith('/about') ? 'active' : ''}`}
                                             onMouseDown={event => { this.props.navigate('/about') }}>
-                                            &iquest;Quienes somos?
+                                            &iquest;Qui&eacute;nes somos?
                                         </button>
                                     </li>
                                     <li className="ms-2">
