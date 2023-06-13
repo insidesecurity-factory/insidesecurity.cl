@@ -3,8 +3,6 @@ import './assets/style.css';
 import securityImg from './assets/security.png';
 import davidReyesImg from './assets/david-reyes.png';
 import staffImg from './assets/staff.jpg';
-// import splashUpImg from './assets/splash-up.png';
-// import splashDownImg from './assets/splash-down.png';
 
 
 class AboutMainView extends Component {
@@ -50,7 +48,7 @@ class AboutMainView extends Component {
                                     con sedes en Valpara&iacute;so, Santiago de Chile y Per&uacute;, que
                                     nace con la misi&oacute;n de ofrecer servicios y soluciones de calidad
                                     que prometan disminuir los riesgos asociados con la delincuencia
-                                    inform&aacute;tica a trav&ecute;s del trabajo &eacute;tico y profesional.<br />
+                                    inform&aacute;tica a trav&eacute;s del trabajo &eacute;tico y profesional.<br />
                                     <span className="d-block fw-bolder pt-3">David Reyes Letelier. Gerente General de Inside Security.</span>
                                 </p>
                             </div>
