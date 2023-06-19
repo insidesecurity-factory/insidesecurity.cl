@@ -97,8 +97,21 @@ class Layout extends Component {
                                         <b>Horarios de atenci&oacute;n</b>: Lunes a Viernes de 9:00 am a 18:30 pm
                                         (horario Santiago de Chile), excepto festivos.
                                     </p>
+                                    <p>
+                                        <b>Ventas e informaciones comerciales</b>:<br />
+
+                                        <a className="btn btn-link ps-0" href="mailto:ventas@insidesecurity.cl">
+                                            <span className="app-material-icons align-middle me-2">mail</span>
+                                            ventas@insidesecurity.cl
+                                        </a>
+                                        
+                                        <a className="btn btn-link" href="tel:%2b56978785289">
+                                            <span className="app-material-icons align-middle me-2">call</span>
+                                            +56 9 7878 5289
+                                        </a>
+                                    </p>
                                     <p className="mb-0">
-                                        <b>Informaciones generales</b>: info@insidesecurity.cl (+56 9 7878 5289).
+                                        <b>Informaciones generales</b>: info@insidesecurity.cl
                                     </p>
                                 </div>
                                 <div className="col-md-6 position-relative d-none d-md-block">
@@ -109,7 +122,7 @@ class Layout extends Component {
                                         marginHeight="0"
                                         marginWidth="0"
                                         frameBorder="0"
-                                        src="https://maps.google.com/maps?width=100%25&amp;height=485&amp;hl=en&amp;q=ARLEGUI%20263%20OF%20601%20VINA%20DEL%20MAR%20VALPARAISO%20(Inside%20Security)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                                        src="https://maps.google.com/maps?width=100%25&amp;height=485&amp;hl=en&amp;q=Guardia%20Vieja%20181%20Of%20506.%20Providencia%20(Inside%20Security)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                                     </iframe>
                                 </div>
                             </div>
