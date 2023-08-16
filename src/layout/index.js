@@ -90,8 +90,8 @@ class Layout extends Component {
                                         se refiere.
                                     </p>
                                     <p>
-                                        Contamos con presencia en Valpara&iacute;so, Santiago de Chile y
-                                        Per&uacute; para atender tus necesidades a la brevedad.
+                                        Contamos con presencia en Chile, Per&uacute; y Espa&ntilde;a para
+                                        atender tus necesidades a la brevedad.
                                     </p>
                                     <p>
                                         <b>Horarios de atenci&oacute;n</b>: Lunes a Viernes de 9:00 am a 18:30 pm
