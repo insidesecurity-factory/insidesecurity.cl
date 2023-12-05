@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
+import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -8,6 +9,42 @@ import logoImg from './assets/logo.png';
 
 
 class Layout extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            name: '',
+            email: '',
+            message: ''
+        };
+
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleChange(event) {
+        this.setState({
+            [event.target.name]: event.target.value
+        });
+    }
+
+    async handleSubmit(event) {
+        event.preventDefault();
+        const hostApi = process.env.REACT_APP_HOST_API_BACKEND;
+        try {
+            await axios.post(`${hostApi}/api/contact/`, {
+                name: this.state.name,
+                email: this.state.email,
+                message: this.state.message
+            });
+            // TODO: Cambiar por alerta de bootstrap
+            alert('Mensaje enviado con éxito');
+            this.setState({ name: '', email: '', message: '' }); // Reset form after submission
+        } catch (error) {
+            // TODO: Cambiar por alerta de bootstrap
+            alert('Error al enviar el mensaje');
+        }
+    }
+
     render() {
         return (
             <div>
@@ -125,7 +162,51 @@ class Layout extends Component {
                                         src="https://maps.google.com/maps?width=100%25&amp;height=485&amp;hl=en&amp;q=Guardia%20Vieja%20181%20Of%20506.%20Providencia%20(Inside%20Security)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                                     </iframe>
                                 </div>
+
+                                <div className="row py-4 bg-white">
+                                    <div className="col-md-12">
+                                        <form onSubmit={this.handleSubmit}>
+                                            <div className="mb-3">
+                                                <label htmlFor="name" className="form-label">Nombre</label>
+                                                <input
+                                                    type="text"
+                                                    className="form-control"
+                                                    id="name"
+                                                    name="name"
+                                                    value={this.state.name}
+                                                    onChange={this.handleChange}
+                                                    required
+                                                />
+                                            </div>
+                                            <div className="mb-3">
+                                                <label htmlFor="email" className="form-label">Correo Electrónico</label>
+                                                <input
+                                                    type="email"
+                                                    className="form-control"
+                                                    id="email"
+                                                    name="email"
+                                                    value={this.state.email}
+                                                    onChange={this.handleChange}
+                                                    required
+                                                />
+                                            </div>
+                                            <div className="mb-3">
+                                                <label htmlFor="message" className="form-label">Mensaje</label>
+                                                <textarea
+                                                    className="form-control"
+                                                    id="message"
+                                                    name="message"
+                                                    value={this.state.message}
+                                                    onChange={this.handleChange}
+                                                    required
+                                                />
+                                            </div>
+                                            <button type="submit" className="btn btn-primary">Enviar</button>
+                                        </form>  
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
