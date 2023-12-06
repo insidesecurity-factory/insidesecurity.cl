@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -14,7 +14,9 @@ class Layout extends Component {
         this.state = {
             name: '',
             email: '',
-            message: ''
+            message: '',
+            alert: false,
+            alertType: ''
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -36,13 +38,41 @@ class Layout extends Component {
                 email: this.state.email,
                 message: this.state.message
             });
-            // TODO: Cambiar por alerta de bootstrap
-            alert('Mensaje enviado con éxito');
-            this.setState({ name: '', email: '', message: '' }); // Reset form after submission
+            this.setState({ 
+                name: '', 
+                email: '', 
+                message: '',
+                alert: true,
+                alertType: 'success'
+            });
         } catch (error) {
-            // TODO: Cambiar por alerta de bootstrap
-            alert('Error al enviar el mensaje');
+            this.setState({
+                alert: true,
+                alertType: 'danger'
+            });
         }
+    }
+
+    closeAlert = () => {
+        this.setState({ alert: false });
+    }
+
+    renderAlert() {
+        if (!this.state.alert) {
+            return null;
+        }
+
+        let message = 'Mensaje enviado con éxito';
+        if (this.state.alertType === 'danger') {
+            message = 'Error al enviar el mensaje';
+        }
+
+        return (
+            <div className={`alert alert-${this.state.alertType} alert-dismissible fade show`} role="alert">
+                {message}
+                <button type="button" className="btn-close" aria-label="Close" onClick={this.closeAlert}></button>
+            </div>
+        );
     }
 
     render() {
@@ -165,6 +195,7 @@ class Layout extends Component {
 
                                 <div className="row py-4 bg-white">
                                     <div className="col-md-12">
+                                        {this.renderAlert()}
                                         <form onSubmit={this.handleSubmit}>
                                             <div className="mb-3">
                                                 <label htmlFor="name" className="form-label">Nombre</label>
