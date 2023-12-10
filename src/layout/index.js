@@ -6,6 +6,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'material-icons/iconfont/material-icons.css';
 import './assets/style.css';
 import logoImg from './assets/logo.png';
+import { GoogleReCaptchaProvider, GoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 
 class Layout extends Component {
@@ -16,11 +17,13 @@ class Layout extends Component {
             email: '',
             message: '',
             alert: false,
-            alertType: ''
+            alertType: '',
+            reCaptchaToken: ''
         };
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleVerify = this.handleVerify.bind(this);
     }
 
     handleChange(event) {
@@ -29,14 +32,30 @@ class Layout extends Component {
         });
     }
 
+    async handleVerify(token) {
+        this.setState({ reCaptchaToken: token });
+    }
+
     async handleSubmit(event) {
         event.preventDefault();
+
+        // Asegurar de que el token de reCAPTCHA está listo antes de enviar el formulario
+        if (!this.state.reCaptchaToken) {
+            this.setState({
+                alert: true,
+                alertType: 'danger',
+                errorMessage: 'Por favor, completa el reCAPTCHA.'
+            });
+            return;
+        }
+
         const hostApi = process.env.REACT_APP_HOST_API_BACKEND;
         try {
             await axios.post(`${hostApi}/api/contact/`, {
                 name: this.state.name,
                 email: this.state.email,
-                message: this.state.message
+                message: this.state.message,
+                reCaptchaToken: this.state.reCaptchaToken
             });
             this.setState({ 
                 name: '', 
@@ -196,44 +215,49 @@ class Layout extends Component {
                                 <div className="row py-4 bg-white">
                                     <div className="col-md-12">
                                         {this.renderAlert()}
-                                        <form onSubmit={this.handleSubmit}>
-                                            <div className="mb-3">
-                                                <label htmlFor="name" className="form-label">Nombre</label>
-                                                <input
-                                                    type="text"
-                                                    className="form-control"
-                                                    id="name"
-                                                    name="name"
-                                                    value={this.state.name}
-                                                    onChange={this.handleChange}
-                                                    required
-                                                />
-                                            </div>
-                                            <div className="mb-3">
-                                                <label htmlFor="email" className="form-label">Correo Electrónico</label>
-                                                <input
-                                                    type="email"
-                                                    className="form-control"
-                                                    id="email"
-                                                    name="email"
-                                                    value={this.state.email}
-                                                    onChange={this.handleChange}
-                                                    required
-                                                />
-                                            </div>
-                                            <div className="mb-3">
-                                                <label htmlFor="message" className="form-label">Mensaje</label>
-                                                <textarea
-                                                    className="form-control"
-                                                    id="message"
-                                                    name="message"
-                                                    value={this.state.message}
-                                                    onChange={this.handleChange}
-                                                    required
-                                                />
-                                            </div>
-                                            <button type="submit" className="btn btn-primary">Enviar</button>
-                                        </form>  
+                                        <GoogleReCaptchaProvider reCaptchaKey="6Les9ikpAAAAAGrBkHMYsxI_bY5YFUlLg0E7-FTl">
+                                            <form onSubmit={this.handleSubmit}>
+                                                <div className="mb-3">
+                                                    <label htmlFor="name" className="form-label">Nombre</label>
+                                                    <input
+                                                        type="text"
+                                                        className="form-control"
+                                                        id="name"
+                                                        name="name"
+                                                        value={this.state.name}
+                                                        onChange={this.handleChange}
+                                                        required
+                                                    />
+                                                </div>
+                                                <div className="mb-3">
+                                                    <label htmlFor="email" className="form-label">Correo Electrónico</label>
+                                                    <input
+                                                        type="email"
+                                                        className="form-control"
+                                                        id="email"
+                                                        name="email"
+                                                        value={this.state.email}
+                                                        onChange={this.handleChange}
+                                                        required
+                                                    />
+                                                </div>
+                                                <div className="mb-3">
+                                                    <label htmlFor="message" className="form-label">Mensaje</label>
+                                                    <textarea
+                                                        className="form-control"
+                                                        id="message"
+                                                        name="message"
+                                                        value={this.state.message}
+                                                        onChange={this.handleChange}
+                                                        required
+                                                    />
+                                                </div>
+                                                <div className="mb-3">
+                                                    <GoogleReCaptcha onVerify={this.handleVerify} />
+                                                </div>
+                                                <button type="submit" className="btn btn-primary">Enviar</button>
+                                            </form> 
+                                        </GoogleReCaptchaProvider>
                                     </div>
                                 </div>
                             </div>
