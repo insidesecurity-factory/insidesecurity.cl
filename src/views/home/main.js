@@ -21,6 +21,7 @@ import successHdiImg from './assets/success/hdi.jpg';
 import successInacapImg from './assets/success/inacap.jpg';
 import successSondaImg from './assets/success/sonda.jpg';
 import successGtdIntesisImg from './assets/success/gtd-intesis.jpg';
+/*
 import partnerAppdomeImg from './assets/partners/appdome.jpg';
 import partnerAquaSecurityImg from './assets/partners/aqua-security.jpg';
 import partnerAwsImg from './assets/partners/aws.jpg';
@@ -36,7 +37,7 @@ import partnerOffice365Img from './assets/partners/office-365.jpg';
 import partnerPaloAltoImg from './assets/partners/palo-alto.jpg';
 import partnerRapid7Img from './assets/partners/rapid7.jpg';
 import partnerStellarImg from './assets/partners/stellar.jpg';
-
+*/
 
 class HomeMainView extends Component {
     render() {
