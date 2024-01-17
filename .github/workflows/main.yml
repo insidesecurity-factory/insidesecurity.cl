@@ -20,10 +20,10 @@ jobs:
 
     - name: SSH setting
       run: |
-        mkdir -p ~/.ssh
-        echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        ssh-add ~/.ssh/id_rsa
+        mkdir -p ~/.ssh;
+        echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa;
+        chmod 600 ~/.ssh/id_rsa;
+        ssh-keyscan deploy.insidesecurity.cl > ~/.ssh/known_hosts;
 
     - name: Install project dependencies
       run: npm install
@@ -33,4 +33,4 @@ jobs:
 
     - name: Deploy
       run: |
-        rsync -tvrz --delete ./build/ insidesecurity.cl@deploy.insidesecurity.cl:/home/insidesecurity.cl/public_html/
+        rsync -tvrz --delete ./build/ insidesecurity.cl@deploy.insidesecurity.cl:/home/insidesecurity.cl/public_html/;
