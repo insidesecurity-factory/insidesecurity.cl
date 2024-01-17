@@ -138,7 +138,7 @@ class AboutMainView extends Component {
                             </div>
                             <div className="col-md-5">
                                 <h2 className="display-6 mb-3 text-center text-md-start">
-                                    Nuestro equipo humano 2
+                                    Nuestro equipo humano
                                 </h2>
                                 <p className="text-center text-md-start">
                                     En nuestro equipo de trabajo, contamos con un grupo de profesionales
