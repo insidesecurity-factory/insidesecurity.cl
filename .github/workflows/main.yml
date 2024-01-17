@@ -18,8 +18,7 @@ jobs:
     - name: SSH setting
       run: |
         mkdir -p ~/.ssh;
-        echo 'stdout';
-        echo "$SSH_PRIVATE_KEY";
+        printenv;
         echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa;
         chmod 600 ~/.ssh/id_rsa;
         ssh-keyscan deploy.insidesecurity.cl > ~/.ssh/known_hosts;
