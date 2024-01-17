@@ -1,4 +1,4 @@
-name: Deploy 1.1
+name: Deploy 1.2
 
 on:
   push:
@@ -18,7 +18,6 @@ jobs:
     - name: SSH setting
       run: |
         mkdir -p ~/.ssh;
-        printenv;
         echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa;
         chmod 600 ~/.ssh/id_rsa;
         ssh-keyscan deploy.insidesecurity.cl > ~/.ssh/known_hosts;
