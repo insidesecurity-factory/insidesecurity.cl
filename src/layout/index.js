@@ -5,9 +5,66 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'material-icons/iconfont/material-icons.css';
 import './assets/style.css';
 import logoImg from './assets/logo.png';
-
+import Contact from '../components/contact';
 
 class Layout extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            contactArrays: {},
+        };
+    }
+
+    componentDidMount() {
+        this.evaluateUrlCondition();
+    }
+    
+
+    evaluateUrlCondition() {
+        const { pathname } = window.location;
+
+        let domainParts = pathname.split('/');
+        let domainExtension = 'cl';
+        if (domainParts.length > 2) {
+            domainParts = domainParts[2].split('.');
+            domainExtension = domainParts[domainParts.length - 1].toLowerCase();
+        }
+    
+        let newData = {};
+        switch (domainExtension) {
+            case 'io':
+                newData = {
+                    id: 1,
+                    commercial_phone: '',
+                    commercial_email: '',
+                    company_email: '',
+                    schedules: ''
+                };
+                break;
+            case 'es':
+                newData = {
+                    id: 2,
+                    commercial_phone: '',
+                    commercial_email: '',
+                    company_email: '',
+                    schedules: ''
+                };
+                break;
+            default:
+                newData = {
+                    id: 3,
+                    commercial_phone: '+56 9 7878 5289',
+                    commercial_email: 'ventas@insidesecurity.cl',
+                    company_email: 'info@insidesecurity.cl',
+                    schedules: 'Lunes a Viernes de 9:00 am a 18:30 pm (horario Santiago de Chile), excepto festivos.'
+                };
+            break;
+        }
+    
+        this.setState({ contactArrays: newData });
+    }
+    
     render() {
         return (
             <div>
@@ -70,65 +127,7 @@ class Layout extends Component {
 
                 <this.props.body navigate={this.props.navigate} />
 
-                <div className="container mt-5 mb-4">
-                    <div className="row justify-content-md-center">
-                        <div className="col-md-10 px-4 p-md-2">
-
-                            <div className="row px-2 py-4 p-md-5 border rounded bg-white">
-                                <div className="col-md-6">
-                                    <h2 className="display-6 mb-3 text-center text-md-start">
-                                        Cont&aacute;ctanos
-                                    </h2>
-                                    <p>
-                                        <b>&iquest;Necesitas ayuda con tu proyecto de TI? </b>
-                                        &iexcl;No dudes en ponerte en contacto con nosotros!
-                                        Nuestro equipo de expertos est&aacute;n listos para ayudarte a
-                                        resolver cualquier problema o inquietud que puedas tener. Ya
-                                        sea que necesites asistencia t&eacute;cnica, asesoramiento
-                                        o simplemente una consulta, estamos aqu&iacute; para ayudarte
-                                        a llevar tu empresa al siguiente nivel en cuanto a tecnolog&iacute;a
-                                        se refiere.
-                                    </p>
-                                    <p>
-                                        Contamos con presencia en Chile, Per&uacute; y Espa&ntilde;a para
-                                        atender tus necesidades a la brevedad.
-                                    </p>
-                                    <p>
-                                        <b>Horarios de atenci&oacute;n</b>: Lunes a Viernes de 9:00 am a 18:30 pm
-                                        (horario Santiago de Chile), excepto festivos.
-                                    </p>
-                                    <p>
-                                        <b>Ventas e informaciones comerciales</b>:<br />
-
-                                        <a className="btn btn-link ps-0" href="mailto:ventas@insidesecurity.cl">
-                                            <span className="app-material-icons align-middle me-2">mail</span>
-                                            ventas@insidesecurity.cl
-                                        </a>
-                                        
-                                        <a className="btn btn-link" href="tel:%2b56978785289">
-                                            <span className="app-material-icons align-middle me-2">call</span>
-                                            +56 9 7878 5289
-                                        </a>
-                                    </p>
-                                    <p className="mb-0">
-                                        <b>Informaciones generales</b>: info@insidesecurity.cl
-                                    </p>
-                                </div>
-                                <div className="col-md-6 position-relative d-none d-md-block">
-                                    <iframe
-                                        className="border rounded-1 p-1 w-100 h-100 mt-4 mt-md-0"
-                                        title="Oficina Inside Security"
-                                        scrolling="no"
-                                        marginHeight="0"
-                                        marginWidth="0"
-                                        frameBorder="0"
-                                        src="https://maps.google.com/maps?width=100%25&amp;height=485&amp;hl=en&amp;q=Guardia%20Vieja%20181%20Of%20506.%20Providencia%20(Inside%20Security)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Contact contactArrays={this.state.contactArrays} />
 
                 <footer className="text-light pt-2 app-bg-color-3">
                     <div className="container">
