@@ -19,49 +19,33 @@ class Layout extends Component {
     componentDidMount() {
         this.evaluateUrlCondition();
     }
-    
 
     evaluateUrlCondition() {
         const { pathname } = window.location;
-
-        let domainParts = pathname.split('/');
-        let domainExtension = 'cl';
-        if (domainParts.length > 2) {
-            domainParts = domainParts[2].split('.');
-            domainExtension = domainParts[domainParts.length - 1].toLowerCase();
-        }
-    
         let newData = {};
-        switch (domainExtension) {
-            case 'io':
-                newData = {
-                    id: 1,
-                    commercial_phone: '',
-                    commercial_email: '',
-                    company_email: '',
-                    schedules: ''
-                };
-                break;
-            case 'es':
-                newData = {
-                    id: 2,
-                    commercial_phone: '',
-                    commercial_email: '',
-                    company_email: '',
-                    schedules: ''
-                };
-                break;
-            default:
-                newData = {
-                    id: 3,
-                    commercial_phone: '+56 9 7878 5289',
-                    commercial_email: 'ventas@insidesecurity.cl',
-                    company_email: 'info@insidesecurity.cl',
-                    schedules: 'Lunes a Viernes de 9:00 am a 18:30 pm (horario Santiago de Chile), excepto festivos.'
-                };
-            break;
+        if (pathname.includes(".io")) {
+            newData = {
+                commercialPhone: '',
+                commercialEmail: '',
+                companyEmail: '',
+                schedules: ''
+            };
+        } else if (pathname.includes(".es")) {
+            newData = {
+                commercialPhone: '',
+                commercialEmail: '',
+                companyEmail: '',
+                schedules: ''
+            };
         }
-    
+        else {
+            newData = {
+                commercialPhone: '+56 9 7878 5289',
+                commercialEmail: 'ventas@insidesecurity.cl',
+                companyEmail: 'info@insidesecurity.cl',
+                schedules: 'Lunes a Viernes de 9:00 am a 18:30 pm (horario Santiago de Chile), excepto festivos.'
+            };
+        }
         this.setState({ contactArrays: newData });
     }
     
