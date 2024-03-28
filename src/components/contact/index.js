@@ -8,7 +8,7 @@ import './assets/style.css';
 class Contact extends Component {
     render() {
 
-        const { commercial_phone, commercial_email, company_email, schedules } = this.props.contactArrays;
+        const { commercialPhone, commercialEmail, companyEmail, schedules } = this.props.contactArrays;
 
         return (
             <div className="container mt-5 mb-4">
@@ -40,18 +40,25 @@ class Contact extends Component {
                                 <p>
                                     <b>Ventas e informaciones comerciales</b>:<br />
 
-                                    <a className="btn btn-link ps-0" href={`mailto:${commercial_email ? commercial_email : ""}`}>
+                                    <a className="btn btn-link ps-0" href={`mailto:${commercialEmail ? commercialEmail : ""}`}>
                                         <span className="app-material-icons align-middle me-2">mail</span>
-                                        {commercial_email ? commercial_email : ""}
+                                        {commercialEmail ? commercialEmail : ""}
                                     </a>
                                     
-                                    <a className="btn btn-link" href={`tel:${commercial_phone ? commercial_phone : ""}`}>
+                                    <a className="btn btn-link" href={`tel:${commercialPhone ? commercialPhone : ""}`}>
                                         <span className="app-material-icons align-middle me-2">call</span>
-                                        {commercial_phone ? commercial_phone : ""}
+                                        {commercialPhone ? commercialPhone : ""}
+                                    </a>
+                                </p>
+                                <p>
+                                    <b>Trabaja con nosotros</b>:<br />
+                                    <a className="btn btn-link ps-0" href='mailto:reclutamiento@insidesecurity.cl'>
+                                        <span className="app-material-icons align-middle me-2">mail</span>
+                                        reclutamiento@insidesecurity.cl
                                     </a>
                                 </p>
                                 <p className="mb-0">
-                                    <b>Informaciones generales</b>: {company_email ? company_email : ""}
+                                    <b>Informaciones generales</b>: {companyEmail ? companyEmail : ""}
                                 </p>
                             </div>
                             <div className="col-md-6 position-relative d-none d-md-block">
